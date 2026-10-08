@@ -1,0 +1,6 @@
+{
+  "name": "CalRoof Directory – California's Roofing Company Directory",
+  "description": "Search California's roofing company directory to find local roofers, C-39 licensed roofing contractors, and residential or commercial roofing specialists by city, county, and service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

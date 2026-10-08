@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function () {
+        try {
+          var currentFetch = typeof window.fetch === 'function' ? window.fetch.bind(window) : window.fetch;
+          var descriptor = {
+            configurable: true,
+            enumerable: true,
+            get: function () {
+              return currentFetch;
+            },
+            set: function (nextFetch) {
+              currentFetch = nextFetch;
+            }
+          };
+          try {
+            Object.defineProperty(window, 'fetch', descriptor);
+          } catch (err1) {}
+          try {
+            if (typeof Window !== 'undefined' && Window.prototype) {
+              Object.defineProperty(Window.prototype, 'fetch', descriptor);
+            }
+          } catch (err2) {}
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalRoof Directory – Find Trusted Roofing Companies in California</title>
+    <meta name="description" content="Search California's roofing company directory to find local roofers, C-39 licensed roofing contractors, and roofing specialists by city, service, and area." />
+    <meta property="og:title" content="CalRoof Directory – Find Trusted Roofing Companies in California" />
+    <meta property="og:description" content="Search California's roofing company directory to find local roofers, C-39 licensed roofing contractors, and roofing specialists by city, service, and area." />
+    <meta property="og:site_name" content="CalRoof Directory" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CalRoof Directory – Find Trusted Roofing Companies in California" />
+    <meta name="twitter:description" content="Search California's roofing company directory to find local roofers, C-39 licensed roofing contractors, and roofing specialists by city, service, and area." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CalRoof Directory",
+        "alternateName": "California's Roofing Company Directory",
+        "description": "Niche-specific roofing contractor directory for California homeowners and commercial property owners.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "/roofing-companies/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#F8FAFC] text-[#0F172A] antialiased selection:bg-[#D9532F]/15 selection:text-[#D9532F]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

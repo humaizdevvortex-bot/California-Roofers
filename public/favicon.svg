@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="8" y1="14" x2="56" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF6B4A" />
+      <stop offset="100%" stop-color="#D9532F" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" />
+  <path d="M10 34L32 15L54 34L48 34L32 20.5L16 34H10Z" fill="url(#roofGrad)" />
+  <path d="M18 37L32 25L46 37V50C46 51.1046 45.1046 52 44 52H20C18.8954 52 18 51.1046 18 50V37Z" fill="#FFFFFF" fill-opacity="0.95" />
+  <rect x="28" y="38" width="8" height="14" rx="2" fill="url(#roofGrad)" />
+</svg>
